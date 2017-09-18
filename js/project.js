@@ -6,7 +6,7 @@ numbers.forEach((function(value, index, array) {
 
   if (lastValue == value) {
     // If we are at the end
-    console.log(value);
+    console.log("Item " + index + " = " + value);
   }
 
   else {

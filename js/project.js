@@ -7,10 +7,12 @@ numbers.forEach((function(value, index, array) {
   if (lastValue === value) {
     // If we are at the end
     console.log("Item " + index + " = " + value);
+    select("#text").innerHTML += "Item " + index + " = " + value + "<br>";
   }
 
   else {
     var result = value + array[index + 1];
     console.log("Item " + index + " = " + result);
+    select("#text").innerHTML += "Item " + index + " = " + result + "<br>";
   }
 }));
